@@ -1,9 +1,40 @@
 /* -------------------------------------------------- */
+                /* Global styling */
+
+body{
+    background-color: rgba(74, 8, 128, 0.877);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */
                 /* Header styling */
+
 header{
     font-size: 30px;
     position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(74, 8, 128);
+    
+
 }
+
 /* -------------------------------------------------- */
 
 
@@ -11,6 +42,54 @@ header{
                 /* Navbar styling */
 
 .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.navbar a{
+    margin: 0 20px;
+}
+
+
+/* -------------------------------------------------- */
+
+/* Spacing content from header */
+.spacer{
+    height: 100px;
+}
+
+
+/* -------------------------------------------------- */
+                /* Main styling */
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+}
+
+/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+                /* Content styling */
+
+section{  
+    background-color: rgba(194, 97, 18, 0.87);
+    margin: 50px 0;
+    border-radius: 5px;
+    box-shadow: 1px 4px 7px black, -1px -2px 7px black;    
+    padding: 20px 0 20px;
+    text-align: center
 
 }
-/* -------------------------------------------------- */
+
+
+/* -------------------------------------------------- */                
