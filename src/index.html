@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Witches' Hollow Arcade</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
 </head>
 <body>
+    <!-- Header and nav-bar -->
     <header id="header" class="page-header">
          Witches' Hollow Arcade
-        <img src="" alt="Probably Cursed">
+        <img src="" id="header-img" alt="Probably Cursed">
         <nav id="nav-bar" class="navbar">
             <a href="#games" class=nav-link>Our games </a>
             <a href="#price" class="nav-link">Pricing </a>
@@ -18,11 +19,12 @@
         </nav>
     </header>
     
+    <!-- Spacer so the content doesn't start in the same position as the header -->
     <div class="spacer">
 
     </div>
     <main class="content">
-            
+        <!-- Games -->
         <div class="description">
             <img src="" alt="Lorem" class="deco-image-left">            
             <section id=games>
@@ -34,6 +36,8 @@
             <img src="" alt="Lorem" class="deco-image-right">
         </div>
 
+
+        <!-- Pricing -->
         <div class="description">
             <img src="" alt="Lorem" class="deco-image-left">
             <section id="price">
@@ -44,7 +48,10 @@
             </section>
         <img src="" alt="Lorem" class="deco-image-right">
         </div>
-
+        <div class="description">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/zO3ctKcI8Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Championship -->
         <div class="description">
             <img src="" alt="Lorem" class="deco-image-left">
             <section id="champs">
@@ -52,10 +59,12 @@
                 <p class="competitions">
                    Lorem ipsum.
                </p>
+               
             <form action="https://www.freecodecamp.com/email-submit" id="form" class="champ-form">
                 <input type="email" name="email" id="email" placeholder="Enter your email address." required/>
                 <input id="submit" type="submit" value="Join now!" class="submit-button"></input>
-            </form> 
+            </form>
+
             </section>
             <img src="" alt="Lorem" class="deco-image-right">
         </div>
@@ -63,6 +72,7 @@
             </div>
         </div>
     </main>
+    
     
 
 </body>

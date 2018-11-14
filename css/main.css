@@ -6,7 +6,8 @@ body{
 }
 
 a{
-    text-decoration: none;
+    /* remove underline from links */
+    text-decoration: none; 
     color: black;
 }
 
@@ -17,22 +18,34 @@ a{
                 /* Header styling */
 
 header{
-    font-size: 30px;
+    /* stick to the top */
     position: fixed;
+    font-size: 30px;
     top: 0;
     left:0;
-    padding-bottom: 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+    /* fully expand and increase height */
     width: 100%;
     height: 100px;
     background-color: rgba(74, 8, 128);
+
+    /* appear in front of the other elements, covering them */
     z-index: 99;
+
+    /*rounded borders */
+    padding-bottom: 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
     
+    /* display as flexbox */
+    display: flex;
+
+    /* the elements inside the header (header title and links) must be aligned in a column */
+    flex-direction: column;
+    
+    /* space the elements and align them in the center */
+    justify-content: space-aroud;
+    align-items: center;    
 
 }
 
@@ -43,18 +56,43 @@ header{
                 /* Navbar styling */
 
 .navbar{
+    /* position according to header title */
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+
+    /* distance from the top and bottom */
     font-size: 18px;
     margin: 10px 0;
+
+    /* expand */
+    width: 40%;
+
+    /* display as flexbox */
+    display: flex;
+
+    /* the anchors must be listed in a row */
+    flex-direction: row;
+    /* space the elements */
+    justify-content: space-between;
+
+    
+    
 }
 
-.navbar a{
-    margin: 0 20px;
+@media (max-width: 750px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        }
 }
-
+@media (max-width: 750px){
+    .nav-link{
+        position: relative;
+        margin: 0 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }      
+}
 
 /* -------------------------------------------------- */
 
@@ -66,14 +104,15 @@ header{
 
 /* -------------------------------------------------- */
                 /* Main styling */
-
+/* Each element inside the main content must be in a row */
 .content{
-    position: relative;
+    position: relative;    
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 
-
+/* Each wrapper must organize its children in a column */
 .description{
     display: flex;
     flex-direction: row;
@@ -82,6 +121,13 @@ header{
     
 }
 
+@media (max-width: 750px){
+    img{
+        display: none;
+        
+    }
+}
+/* Image to the left of the section card */
 .deco-image-left{
     position: relative;
     margin: 20px 20px;
@@ -89,6 +135,7 @@ header{
     left: 0;
 }
 
+/* Image to the right of the section card */
 .deco-image-right{
     position: relative;
     margin: 20px 20px;
@@ -107,12 +154,25 @@ section{
     background-color: rgba(194, 97, 18, 0.87);
     margin: 50px 0;
     border-radius: 5px;
+
+    /* box shadow bottom left top right */
     box-shadow: 1px 4px 7px black, -1px -2px 7px black;    
     padding: 20px 10px 20px;
     width: 50%;
+
+    /* align the text */
     text-align: center;
 
 }
-
-
+@media(max-width: 750px){
+    #form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+#video{
+    position: relative;
+    /* margin: 0 auto; */
+}
 /* -------------------------------------------------- */                
