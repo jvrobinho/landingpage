@@ -20,7 +20,7 @@ header{
     font-size: 30px;
     position: fixed;
     top: 0;
-    left: 0;
+    left:0;
     padding-bottom: 20px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -42,6 +42,7 @@ header{
                 /* Navbar styling */
 
 .navbar{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -69,11 +70,32 @@ header{
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    
     z-index: -1;
 }
 
+
+.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.deco-image-left{
+    position: relative;
+    margin: 20px 20px;
+    top: 70px;
+    left: 0;
+}
+
+.deco-image-right{
+    position: relative;
+    margin: 20px 20px;
+    top: 70px;
+    right: 0;
+}
 /* -------------------------------------------------- */
 
 
@@ -82,12 +104,14 @@ header{
                 /* Content styling */
 
 section{  
+    position: relative;
     background-color: rgba(194, 97, 18, 0.87);
     margin: 50px 0;
     border-radius: 5px;
     box-shadow: 1px 4px 7px black, -1px -2px 7px black;    
-    padding: 20px 0 20px;
-    text-align: center
+    padding: 20px 10px 20px;
+    width: 50%;
+    text-align: center;
 
 }
 
